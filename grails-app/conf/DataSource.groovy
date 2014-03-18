@@ -13,8 +13,15 @@ hibernate {
 environments {
     development {
         dataSource {
-            dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+	        dbCreate = "update"
+	        driverClassName = "org.postgresql.Driver"
+	        dialect = org.hibernate.dialect.PostgreSQLDialect
+	
+	        uri = new URI("postgres://postgres:test@localhost/testdb")
+	
+	        url = "jdbc:postgresql://"+uri.host+uri.path
+	        username = uri.userInfo.split(":")[0]
+	        password = uri.userInfo.split(":")[1]
         }
     }
     test {

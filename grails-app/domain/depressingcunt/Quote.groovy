@@ -3,9 +3,10 @@ package depressingcunt
 class Quote {
 
 	static mapping = {
-		table "Quotes"
+		table "quotes"
 	}
 	
+	Integer id
 	String quote
 	String author
 	Date dateRecorded
