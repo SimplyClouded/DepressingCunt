@@ -1,0 +1,9 @@
+@import "bootstrap";
+
+blockquote {
+	margin-top: 33px;
+}
+
+footer {
+	float: right;
+}
