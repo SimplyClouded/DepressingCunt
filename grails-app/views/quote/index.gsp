@@ -8,7 +8,7 @@
 <nav class="navbar navbar-inverse" role="navigation">
  <div class="container">
  	<ul class="nav navbar-nav">
- 		 <li class="active"><a href="/DepressingCunt">Home</a></li>
+ 		 <li class="active"><a href="/">Home</a></li>
  		 <li><g:link url="about">About</g:link></li>
  	</ul>
  </div>
